@@ -29,7 +29,7 @@ def predict():
     final_input=scale_pkl.transform(np.array(data).reshape(1,-1))
     print(final_input)
     output=model.predict(final_input)[0]
-    return render_template("home.html",prediction_text="The Predicted house price is {}".format(output))
+    return render_template("home.html",prediction_text="The Predicted House Price is {}".format(output))
 
 if __name__=="__main__":
     app.run(debug=True)
